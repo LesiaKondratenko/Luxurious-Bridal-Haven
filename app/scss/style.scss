@@ -12,7 +12,7 @@ body {
 
 .promo {
   background-color: vars.$bg-primary;
-  padding: 7px 0 9px;  
+  padding: 7px 0 9px;
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
@@ -123,7 +123,7 @@ body {
     padding: 1px 30px 5px 0;
     color: vars.$color-text-muted;
     &::placeholder {
-      color: vars.$color-text-muted;  
+      color: vars.$color-text-muted;
     }
   }
 
@@ -155,21 +155,20 @@ body {
     gap: 0 37px;
   }
 
-  &__bottom-item + .footer__bottom-item{
+  &__bottom-item + .footer__bottom-item {
     position: relative;
     &::before {
-      content: '|';
+      content: "|";
       position: absolute;
-      left: -21px;  
+      left: -21px;
     }
   }
-
 }
 
-  .top {
-    min-height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+.top {
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__inner {
     display: flex;
@@ -198,6 +197,63 @@ body {
   }
 }
 
+.new-collection {
+  background-image: url(../images/top-decor.svg);
+  background-repeat: no-repeat;
+  background-position: 240px -40%;
+  &__inner {
+    padding: 150px 0;
+    display: flex;
+  }
 
+  &__content {
+    max-width: 492px;
+    padding: 75px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
 
+  &__text {
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__link {
+    margin-top: auto;
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    padding: 10px 65px;
+    border: 1px solid vars.$bg-primary;
+    align-self: start;
+  }
+
+  &__img {
+    padding-top: 75px;
+    width: 100%;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__box-img {
+    max-width: 404px;
+     margin-left: -20%;
+  }
+
+  &__caption {
+    color: vars.$color-text-muted;
+    margin-top: 40px;
+    margin-left: 5px;
+   
+    }
+}
