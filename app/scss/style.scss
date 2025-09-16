@@ -283,7 +283,7 @@ body {
   }
 
   &__text {
-     font-size: 30px;
+    font-size: 30px;
     margin-bottom: 40px;
     @extend %lora-400;
     color: vars.$color-primary;
@@ -311,7 +311,7 @@ body {
   &__button {
     text-transform: uppercase;
     width: 100%;
-    display:block;
+    display: block;
     background-color: vars.$color-accent;
     padding: 12px;
     border-radius: 3px;
@@ -324,5 +324,59 @@ body {
 
   &__form-caption {
     font-size: 11px;
+  }
+}
+
+.designer {
+  padding: 150px 0 210px;
+
+  &__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 400px;
+    margin-right: 170px;
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__box {
+    position: relative;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 170px;
+    left: -170px;
+    background-color: #fff;
+    padding: 20px 18px;
+    width: 300px;
+    @extend %lora-400;
+    border: 3px solid vars.$bg-primary;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
   }
 }
