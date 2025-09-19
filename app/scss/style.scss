@@ -341,7 +341,6 @@ body {
     transform: translateX(-50%);
     top: -225px;
     z-index: 5;
-
   }
 
   &__inner {
@@ -403,14 +402,14 @@ body {
     display: flex;
     position: relative;
   }
-  
+
   &__img {
     position: absolute;
     bottom: 0;
     left: 40px;
   }
 
-  &__img-decor{
+  &__img-decor {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -438,13 +437,12 @@ body {
     padding-left: 50px;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 30px;
       height: 22px;
       left: 0;
       background-image: url(../images/our-advatages-item-decor.svg);
-
     }
   }
 }
@@ -483,7 +481,6 @@ body {
     border: 1px solid vars.$color-text-muted;
   }
 
-  
   &__box-right {
     grid-row: span 2;
     align-self: center;
@@ -512,3 +509,64 @@ body {
   }
 }
 
+.appointment {
+  padding: 50px 0 130px;
+  background-image: url(../images/appointment-decor.svg);
+  background-repeat: no-repeat;
+  background-position: center 105px;
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  &__box-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &__box-title {
+    font-size: 30px;
+    margin-bottom: 80px;
+    @extend %lora-400;
+    text-transform: uppercase;
+  }
+
+   &__box-text {
+    @extend %opensans-700;
+    margin-bottom: 30px;
+    color: vars.$color-text-muted;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: vars.$color-text-muted;
+    }
+    background-color: transparent;
+  }
+
+  &__btn {
+    margin-top: auto;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: vars.$color-accent;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+}
